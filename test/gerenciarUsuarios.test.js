@@ -14,6 +14,10 @@ describe('Testar as funções de Gestão de Usuários', function(){
         const listaDeUsuarios = retornarUsuarios();
 
         //comparar se o novo nome está no fim da lista de usuários
+        
+
+
+        //converte objetos para minusculo para serem comparados depois, ou seja, ignorando maiuscule e minusculo.
         function equalIgnoreCase(obj1, obj2) {
          return Object.keys(obj1).every(
          key => obj1[key].toLowerCase() === obj2[key].toLowerCase()
